@@ -172,3 +172,6 @@ reg add "HKCU\Software\Policies\Microsoft\Windows\CloudContent" /v "ConfigureWin
 
 :: Disable toast notifications on the lock screen
 reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications" /v "NoToastApplicationNotificationOnLockScreen" /d "1" /t REG_DWORD /f
+
+:: Disable the reminder to finish setting up the PC
+reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" /v "ScoobeSystemSettingEnabled" /d "0" /t REG_DWORD /f
